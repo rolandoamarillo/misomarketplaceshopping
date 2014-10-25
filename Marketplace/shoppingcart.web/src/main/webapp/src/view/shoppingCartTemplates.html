@@ -1,0 +1,13 @@
+<script type="text/template" id="shoppingCart">
+    <div class="form-group">
+    <form role="form" id="<%= componentId %>-shoppingCartForm">
+    <% if(shoppingCart.id) {%>
+    <input type="hidden" name="id" value="<%= shoppingCart.id %>"/>
+    <% }%>
+		<div class="form-group" >
+		<label for="name">Name</label>
+    	<input type="text" class="form-control" id="name" name="name" placeholder="Enter value" value="<%= shoppingCart.get('name') %>"/>	
+		</div>
+    </form>
+    </div>
+</script> 

@@ -1,0 +1,13 @@
+<script type="text/template" id="wishList">
+    <div class="form-group">
+    <form role="form" id="<%= componentId %>-wishListForm">
+    <% if(wishList.id) {%>
+    <input type="hidden" name="id" value="<%= wishList.id %>"/>
+    <% }%>
+		<div class="form-group" >
+		<label for="name">Name</label>
+    	<input type="text" class="form-control" id="name" name="name" placeholder="Enter value" value="<%= wishList.get('name') %>"/>	
+		</div>
+    </form>
+    </div>
+</script> 

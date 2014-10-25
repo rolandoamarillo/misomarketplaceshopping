@@ -1,0 +1,89 @@
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# =========================
+# Operating System Files
+# =========================
+
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+/Marketplace/crudmaker.web/target/
+/Marketplace/category.service.subsystem/target/
+/Marketplace/picture.service.subsystem/target/
+/Marketplace/product.service.subsystem/target/
+/Marketplace/feature.service.subsystem/target/
+/Marketplace/category.web/target/
+/Marketplace/product.web/target/
+/Marketplace/shoppingcartitem.service.subsystem/target/
+/Marketplace/shoppingcart.service.subsystem/target/
+/Marketplace/shoppingcart.web/target/
+/Marketplace/shoppingcartitem.web/target/
+/Marketplace/buyer.service.subsystem/target/
+/Marketplace/buyer.web/target/
+/Marketplace/user.service.subsystem/target/
+/Marketplace/user.web/target/
+/Marketplace/address.service.subsystem/target/
+/Marketplace/address.web/target/
+/Marketplace/paymentmode.service.subsystem/target/
+/Marketplace/paymentmode.web/target/
+/Marketplace/purchaseitem.service.subsystem/target/
+/Marketplace/creditcard.service.subsystem/target/
+/Marketplace/payment.service.subsystem/target/
+/Marketplace/purchase.service.subsystem/target/
+/Marketplace/purchase.web/target/
+/Marketplace/purchaseitem.web/target/
+/Marketplace/creditcard.web/target/
+/Marketplace/picture.web/target/
+/Marketplace/score.service.subsystem/target/
+/Marketplace/score.web/target/
+/Marketplace/bonus.service.subsystem/target/
+/Marketplace/bonus.web/target/
+/Marketplace/reward.service.subsystem/target/
+/Marketplace/reward.web/target/
+/Marketplace/feature.web/target/
+/Marketplace/payment.web/target/
+/Marketplace/wishlistitem.service.subsystem/target/
+/Marketplace/wishlist.web/target/
+/Marketplace/wishlist.service.subsystem/target/
+/Marketplace/wishlistitem.web/target/
+/Marketplace/product.master.service.subsystem/target/
+/Marketplace/purchase.master.service.subsystem/target/
+/Marketplace/wishlist.master.service.subsystem/target/
+/Marketplace/shoppingcart.master.service.subsystem/target/
+/Marketplace/default-product-ear/target/
+/Marketplace/web-product/target/
