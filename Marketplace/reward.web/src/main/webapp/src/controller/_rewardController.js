@@ -140,7 +140,7 @@ define(['model/rewardModel'], function(rewardModel) {
         },
 		_loadRequiredComponentsData: function(callBack) {
             var self = this;
-            var listReady = _.after(1, function(){
+            var listReady = _.after(2, function(){
                 callBack();
             }); 
             var listDataReady = function(componentName, model, aliasModel){
@@ -152,6 +152,7 @@ define(['model/rewardModel'], function(rewardModel) {
                 listReady();
             };
 				App.Utils.getComponentList('purchaseComponent',listDataReady,'purchaseComponent');
+				App.Utils.getComponentList('buyerComponent',listDataReady,'buyerComponent');
         },
         save: function() {
             var self = this;
@@ -185,6 +186,8 @@ define(['model/rewardModel'], function(rewardModel) {
                 self.$el.html(self.editTemplate({reward: self.currentModel, componentId: self.componentId , showEdit : self.showEdit , showDelete : self.showDelete
  
 				    ,purchase: self.purchaseComponent
+ 
+				    ,buyer: self.buyerComponent
  
 				}));
                 self.$el.slideDown("fast");

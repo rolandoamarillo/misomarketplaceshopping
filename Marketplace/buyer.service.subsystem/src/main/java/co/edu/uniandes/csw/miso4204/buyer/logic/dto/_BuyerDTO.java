@@ -67,6 +67,12 @@ public abstract class _BuyerDTO {
 	
 
 	private String name;
+	
+
+	private Long wishlistId;
+	
+
+	private Long shoppingcartId;
 
 
 
@@ -157,6 +163,24 @@ public abstract class _BuyerDTO {
  
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+	public Long getWishlistId() {
+		return wishlistId;
+	}
+ 
+	public void setWishlistId(Long wishlistid) {
+		this.wishlistId = wishlistid;
+	}
+
+
+	public Long getShoppingcartId() {
+		return shoppingcartId;
+	}
+ 
+	public void setShoppingcartId(Long shoppingcartid) {
+		this.shoppingcartId = shoppingcartid;
 	}
 	
 }

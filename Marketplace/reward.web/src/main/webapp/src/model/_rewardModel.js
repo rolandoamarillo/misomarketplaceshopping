@@ -33,7 +33,8 @@ define([], function() {
  
 		 'points' : '' ,  
 		 'name' : '' ,  
-		 'purchaseId' : ''        },
+		 'purchaseId' : '' ,  
+		 'buyerId' : ''        },
         initialize: function() {
           var self = this;
           this.on('invalid',function(error){
@@ -43,6 +44,11 @@ define([], function() {
         getDisplay: function(name) {
 			 if(name=='purchaseId'){  
                  var value = App.Utils.getModelFromCache('purchaseComponent',this.get('purchaseId'));
+                 if(value) 
+                 return value.get('name');
+             }
+			 if(name=='buyerId'){  
+                 var value = App.Utils.getModelFromCache('buyerComponent',this.get('buyerId'));
                  if(value) 
                  return value.get('name');
              }

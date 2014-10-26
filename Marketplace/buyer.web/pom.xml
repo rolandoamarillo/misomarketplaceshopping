@@ -68,6 +68,29 @@
             <version>0.0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
- 	
+		<dependency>
+            <groupId>co.edu.uniandes.csw.miso4204</groupId>
+            <artifactId>wishlist.web</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+		<dependency>
+            <groupId>co.edu.uniandes.csw.miso4204</groupId>
+            <artifactId>shoppingcart.web</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+		<dependency>
+            <groupId>co.edu.uniandes.csw.miso4204</groupId>
+            <artifactId>address.web</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+		<dependency>
+            <groupId>co.edu.uniandes.csw.miso4204</groupId>
+            <artifactId>creditcard.web</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
     </dependencies> 
 </project>

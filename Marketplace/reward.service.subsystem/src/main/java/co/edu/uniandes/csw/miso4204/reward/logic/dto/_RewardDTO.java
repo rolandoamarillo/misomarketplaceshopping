@@ -49,6 +49,9 @@ public abstract class _RewardDTO {
 	
 
 	private Long purchaseId;
+	
+
+	private Long buyerId;
 
 
 
@@ -85,6 +88,15 @@ public abstract class _RewardDTO {
  
 	public void setPurchaseId(Long purchaseid) {
 		this.purchaseId = purchaseid;
+	}
+
+
+	public Long getBuyerId() {
+		return buyerId;
+	}
+ 
+	public void setBuyerId(Long buyerid) {
+		this.buyerId = buyerid;
 	}
 	
 }

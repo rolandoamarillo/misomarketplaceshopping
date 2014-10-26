@@ -22,6 +22,16 @@
             <% }); %>                
             </select>  
 		</div>
+		<div class="form-group" >
+ 
+			<label for="buyeridId">Buyer Id</label> 
+            <select class="form-control" id="buyerId" name="buyerId">
+			  <option value="">None</option>
+            <% buyer.each(function(buyerid) { %> 
+              <option value="<%=buyerid.get('id')%>" <% if(reward.get('buyerId')==buyerid.get('id')) {%>selected<%}%> ><%=buyerid.get('name')%></option>
+            <% }); %>                
+            </select>  
+		</div>
     </form>
     </div>
 </script> 

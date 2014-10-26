@@ -39,7 +39,9 @@ define([], function() {
 		 'lastName' : '' ,  
 		 'birthDate' : '' ,  
 		 'gender' : '' ,  
-		 'name' : ''        },
+		 'name' : '' ,  
+		 'wishlistId' : '' ,  
+		 'shoppingcartId' : ''        },
         initialize: function() {
           var self = this;
           this.on('invalid',function(error){
@@ -50,6 +52,16 @@ define([], function() {
              if(name=='birthDate'){
                    var dateConverter = App.Utils.Converter.date;
                    return dateConverter.unserialize(this.get('birthDate'), this);
+             }
+			 if(name=='wishlistId'){  
+                 var value = App.Utils.getModelFromCache('wishListComponent',this.get('wishlistId'));
+                 if(value) 
+                 return value.get('name');
+             }
+			 if(name=='shoppingcartId'){  
+                 var value = App.Utils.getModelFromCache('shoppingCartComponent',this.get('shoppingcartId'));
+                 if(value) 
+                 return value.get('name');
              }
          return this.get(name);
         }
