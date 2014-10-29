@@ -31,7 +31,8 @@ define([], function() {
     App.Model._WishListModel = Backbone.Model.extend({
         defaults: {
  
-		 'name' : ''        },
+		 'name' : '' ,  
+		 'buyerId' : ''        },
         initialize: function() {
           var self = this;
           this.on('invalid',function(error){
@@ -39,6 +40,11 @@ define([], function() {
           });
         },
         getDisplay: function(name) {
+			 if(name=='buyerId'){  
+                 var value = App.Utils.getModelFromCache('buyerComponent',this.get('buyerId'));
+                 if(value) 
+                 return value.get('name');
+             }
          return this.get(name);
         }
     });

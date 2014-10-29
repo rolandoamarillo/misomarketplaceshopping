@@ -36,10 +36,10 @@ import co.edu.uniandes.csw.miso4204.purchase.logic.dto.PurchaseDTO;
 import co.edu.uniandes.csw.miso4204.purchase.logic.api.IPurchaseLogicService;
 import co.edu.uniandes.csw.miso4204.purchase.master.logic.api._IPurchaseMasterLogicService;
 import co.edu.uniandes.csw.miso4204.purchase.master.logic.dto.PurchaseMasterDTO;
-import co.edu.uniandes.csw.miso4204.payment.logic.api.IPaymentLogicService;
 import co.edu.uniandes.csw.miso4204.purchaseitem.logic.api.IPurchaseItemLogicService;
-import co.edu.uniandes.csw.miso4204.payment.logic.dto.PaymentDTO;
+import co.edu.uniandes.csw.miso4204.payment.logic.api.IPaymentLogicService;
 import co.edu.uniandes.csw.miso4204.purchaseitem.logic.dto.PurchaseItemDTO;
+import co.edu.uniandes.csw.miso4204.payment.logic.dto.PaymentDTO;
 import javax.inject.Inject;
 import javax.ejb.EJB;
 
@@ -48,9 +48,9 @@ public abstract class _PurchaseMasterMockLogicService implements _IPurchaseMaste
 
     protected static ArrayList<PurchaseMasterDTO> purchaseMasterDtosList = new ArrayList<PurchaseMasterDTO>() ;
     @Inject
-    protected IPaymentLogicService paymentPersistance;
-    @Inject
     protected IPurchaseItemLogicService purchaseItemPersistance;
+    @Inject
+    protected IPaymentLogicService paymentPersistance;
     @Inject
     protected IPurchaseLogicService purchasePersistance;
 

@@ -140,7 +140,7 @@ define(['model/buyerModel'], function(buyerModel) {
         },
 		_loadRequiredComponentsData: function(callBack) {
             var self = this;
-            var listReady = _.after(2, function(){
+            var listReady = _.after(1, function(){
                 callBack();
             }); 
             var listDataReady = function(componentName, model, aliasModel){
@@ -151,7 +151,6 @@ define(['model/buyerModel'], function(buyerModel) {
             }    
                 listReady();
             };
-				App.Utils.getComponentList('wishListComponent',listDataReady,'wishListComponent');
 				App.Utils.getComponentList('shoppingCartComponent',listDataReady,'shoppingCartComponent');
         },
         save: function() {
@@ -184,8 +183,6 @@ define(['model/buyerModel'], function(buyerModel) {
             var self = this;
             this.$el.slideUp("fast", function() {
                 self.$el.html(self.editTemplate({buyer: self.currentModel, componentId: self.componentId , showEdit : self.showEdit , showDelete : self.showDelete
- 
-				    ,wishList: self.wishListComponent
  
 				    ,shoppingCart: self.shoppingCartComponent
  

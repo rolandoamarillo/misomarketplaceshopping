@@ -69,13 +69,13 @@
         </dependency>
 		<dependency>
             <groupId>co.edu.uniandes.csw.miso4204</groupId>
-            <artifactId>payment.service.subsystem</artifactId>
+            <artifactId>purchaseitem.service.subsystem</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 		<dependency>
             <groupId>co.edu.uniandes.csw.miso4204</groupId>
-            <artifactId>purchaseitem.service.subsystem</artifactId>
+            <artifactId>payment.service.subsystem</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
