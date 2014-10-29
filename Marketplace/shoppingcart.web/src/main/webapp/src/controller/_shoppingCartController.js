@@ -138,6 +138,21 @@ define(['model/shoppingCartModel'], function(shoppingCartModel) {
                 });
             }
         },
+		_loadRequiredComponentsData: function(callBack) {
+            var self = this;
+            var listReady = _.after(1, function(){
+                callBack();
+            }); 
+            var listDataReady = function(componentName, model, aliasModel){
+            if(aliasModel){
+                self[aliasModel] = model;
+            } else {
+            	self[componentName] = model;
+            }    
+                listReady();
+            };
+				App.Utils.getComponentList('buyerComponent',listDataReady,'buyerComponent');
+        },
         save: function() {
             var self = this;
             var model = $('#' + this.componentId + '-shoppingCartForm').serializeObject();
@@ -168,6 +183,8 @@ define(['model/shoppingCartModel'], function(shoppingCartModel) {
             var self = this;
             this.$el.slideUp("fast", function() {
                 self.$el.html(self.editTemplate({shoppingCart: self.currentModel, componentId: self.componentId , showEdit : self.showEdit , showDelete : self.showDelete
+ 
+				    ,buyer: self.buyerComponent
  
 				}));
                 self.$el.slideDown("fast");

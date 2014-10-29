@@ -44,16 +44,6 @@
 		<label for="name">Name</label>
     	<input type="text" class="form-control" id="name" name="name" placeholder="Enter value" value="<%= buyer.get('name') %>"/>	
 		</div>
-		<div class="form-group" >
- 
-			<label for="shoppingcartidId">Shoppingcart Id</label> 
-            <select class="form-control" id="shoppingcartId" name="shoppingcartId">
-			  <option value="">None</option>
-            <% shoppingCart.each(function(shoppingcartid) { %> 
-              <option value="<%=shoppingcartid.get('id')%>" <% if(buyer.get('shoppingcartId')==shoppingcartid.get('id')) {%>selected<%}%> ><%=shoppingcartid.get('name')%></option>
-            <% }); %>                
-            </select>  
-		</div>
     </form>
     </div>
 </script> 

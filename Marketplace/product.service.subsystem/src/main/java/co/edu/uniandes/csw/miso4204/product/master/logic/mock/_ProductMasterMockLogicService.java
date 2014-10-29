@@ -36,10 +36,10 @@ import co.edu.uniandes.csw.miso4204.product.logic.dto.ProductDTO;
 import co.edu.uniandes.csw.miso4204.product.logic.api.IProductLogicService;
 import co.edu.uniandes.csw.miso4204.product.master.logic.api._IProductMasterLogicService;
 import co.edu.uniandes.csw.miso4204.product.master.logic.dto.ProductMasterDTO;
-import co.edu.uniandes.csw.miso4204.picture.logic.api.IPictureLogicService;
 import co.edu.uniandes.csw.miso4204.feature.logic.api.IFeatureLogicService;
-import co.edu.uniandes.csw.miso4204.picture.logic.dto.PictureDTO;
+import co.edu.uniandes.csw.miso4204.picture.logic.api.IPictureLogicService;
 import co.edu.uniandes.csw.miso4204.feature.logic.dto.FeatureDTO;
+import co.edu.uniandes.csw.miso4204.picture.logic.dto.PictureDTO;
 import javax.inject.Inject;
 import javax.ejb.EJB;
 
@@ -48,9 +48,9 @@ public abstract class _ProductMasterMockLogicService implements _IProductMasterL
 
     protected static ArrayList<ProductMasterDTO> productMasterDtosList = new ArrayList<ProductMasterDTO>() ;
     @Inject
-    protected IPictureLogicService picturePersistance;
-    @Inject
     protected IFeatureLogicService featurePersistance;
+    @Inject
+    protected IPictureLogicService picturePersistance;
     @Inject
     protected IProductLogicService productPersistance;
 

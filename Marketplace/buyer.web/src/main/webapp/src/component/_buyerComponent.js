@@ -43,7 +43,6 @@ define(['component/_CRUDComponent', 'model/buyerModel', 'controller/buyerControl
         	this.listComponent.addColumn('birthDate','Birth Date');
         	this.listComponent.addColumn('gender','Gender');
         	this.listComponent.addColumn('name','Name');
-        	this.listComponent.addColumn('shoppingcartId','Shoppingcart Id');
         }
     });
     return App.Component._BuyerComponent;

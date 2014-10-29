@@ -43,6 +43,9 @@ public abstract class _ShoppingCartDTO {
 	
 
 	private String name;
+	
+
+	private Long buyerId;
 
 
 
@@ -61,6 +64,15 @@ public abstract class _ShoppingCartDTO {
  
 	public void setName(String name) {
 		this.name = name;
+	}
+
+
+	public Long getBuyerId() {
+		return buyerId;
+	}
+ 
+	public void setBuyerId(Long buyerid) {
+		this.buyerId = buyerid;
 	}
 	
 }

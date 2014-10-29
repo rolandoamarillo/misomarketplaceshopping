@@ -57,12 +57,6 @@
         </dependency>
 		<dependency>
             <groupId>co.edu.uniandes.csw.miso4204</groupId>
-            <artifactId>shoppingcart.service.subsystem</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-		<dependency>
-            <groupId>co.edu.uniandes.csw.miso4204</groupId>
             <artifactId>address.service.subsystem</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>provided</scope>

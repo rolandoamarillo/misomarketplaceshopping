@@ -39,8 +39,7 @@ define([], function() {
 		 'lastName' : '' ,  
 		 'birthDate' : '' ,  
 		 'gender' : '' ,  
-		 'name' : '' ,  
-		 'shoppingcartId' : ''        },
+		 'name' : ''        },
         initialize: function() {
           var self = this;
           this.on('invalid',function(error){
@@ -51,11 +50,6 @@ define([], function() {
              if(name=='birthDate'){
                    var dateConverter = App.Utils.Converter.date;
                    return dateConverter.unserialize(this.get('birthDate'), this);
-             }
-			 if(name=='shoppingcartId'){  
-                 var value = App.Utils.getModelFromCache('shoppingCartComponent',this.get('shoppingcartId'));
-                 if(value) 
-                 return value.get('name');
              }
          return this.get(name);
         }

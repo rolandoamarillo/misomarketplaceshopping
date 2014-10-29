@@ -36,10 +36,10 @@ import co.edu.uniandes.csw.miso4204.buyer.logic.dto.BuyerDTO;
 import co.edu.uniandes.csw.miso4204.buyer.logic.api.IBuyerLogicService;
 import co.edu.uniandes.csw.miso4204.buyer.master.logic.api._IBuyerMasterLogicService;
 import co.edu.uniandes.csw.miso4204.buyer.master.logic.dto.BuyerMasterDTO;
-import co.edu.uniandes.csw.miso4204.creditcard.logic.api.ICreditCardLogicService;
 import co.edu.uniandes.csw.miso4204.address.logic.api.IAddressLogicService;
-import co.edu.uniandes.csw.miso4204.creditcard.logic.dto.CreditCardDTO;
+import co.edu.uniandes.csw.miso4204.creditcard.logic.api.ICreditCardLogicService;
 import co.edu.uniandes.csw.miso4204.address.logic.dto.AddressDTO;
+import co.edu.uniandes.csw.miso4204.creditcard.logic.dto.CreditCardDTO;
 import javax.inject.Inject;
 import javax.ejb.EJB;
 
@@ -48,9 +48,9 @@ public abstract class _BuyerMasterMockLogicService implements _IBuyerMasterLogic
 
     protected static ArrayList<BuyerMasterDTO> buyerMasterDtosList = new ArrayList<BuyerMasterDTO>() ;
     @Inject
-    protected ICreditCardLogicService creditCardPersistance;
-    @Inject
     protected IAddressLogicService addressPersistance;
+    @Inject
+    protected ICreditCardLogicService creditCardPersistance;
     @Inject
     protected IBuyerLogicService buyerPersistance;
 

@@ -35,6 +35,7 @@ define(['component/_CRUDComponent', 'model/shoppingCartModel', 'controller/shopp
         controller : App.Controller.ShoppingCartController,
         configUI: function(){
         	this.listComponent.addColumn('name','Name');
+        	this.listComponent.addColumn('buyerId','Buyer Id');
         }
     });
     return App.Component._ShoppingCartComponent;
