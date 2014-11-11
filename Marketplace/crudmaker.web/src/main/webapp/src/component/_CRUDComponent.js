@@ -4,7 +4,7 @@ define(['controller/messageController', 'component/toolbarComponent', 'component
     };
     App.Component.BasicComponent.extend = Backbone.View.extend;
 
-    App.Component._CRUDComponent = App.Component.BasicComponent.extend({
+    App.Component._CRUDComponent = ({
         initialize: function(options) {
             var self = this;
             this.componentId = App.Utils.randomInteger();
